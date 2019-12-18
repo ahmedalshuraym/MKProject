@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>SA Weather</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+    
+    </div>
+    <div class="col-sm">
+    <select id='cities'>
+  <option value="Riyadh">Riyadh</option>
+  <option value="Jeddah">Jeddah</option>
+  <option value="Ad Dammam">Ad Dammam</option>
+  <option value="Makkah">Makkah</option>
+  <option value="Al Madinah">Al Madinah</option>
+  <option value="Al Khubar">Al Khubar</option>
+  <option value="Al Jubail">Al Jubail</option>
+	  
+</select>
+    </div>
+    <div class="col-sm">
+      
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      
+    </div>
+    <div class="col-sm">
+<button onclick="getForcasting()">GET FORCAST</button>
+    </div>
+    <div class="col-sm">
+   
+    </div>
+  </div>
+    <div class="row">
+    <div class="col-sm">
+      
+    </div>
+    <div class="col-sm">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Day</th>
+      <th scope="col">low</th>
+      <th scope="col">high</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody id='day'>
+
+
+  </tbody>
+</table>
+    </div>
+    <div class="col-sm">
+   
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+<style>
+  body {
+    text-align: center;
+    background: url("https://freefrontend.com/assets/img/css-weather-icons/Animated-Weather-Icons.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: helvetica;
+  }
+  p {
+    font-size: 22px;
+  }
+  input {
+    border: 0;
+    padding: 10px;
+    font-size: 18px;
+  }
+  input[type="submit"] {
+    background: black;
+    color: white;
+  }
+  
+  img {
+
+margin: 40px 0px 0px 0px;
+border: 7px solid white;
+border-radius: 20px;
+
+} 
+
+ .table {
+
+  color: white;
+  background: rgba(0,0,0,0.3);
+
+
+}
+
+.col-sm {
+
+  background: rgba(0,0,0,0.3);
+
+
+}
+footer {
+      
+      text-align: center;
+      vertical-align: text-bottom;
+      color: white ;
+      padding: 10px;
+      background: rgba(0,0,0,0.3);
+      position: relative;
+      bottom:-500;
+      left: 0;
+    }
+
+
+
+
+</style>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+  <script src="app.js"></script>
+
+
+  <footer>
+    <p>Designed by: Ahmed</p>
+  
+  </footer>
+
+
+ 
+
+
+
+  
+
+
+</html>
