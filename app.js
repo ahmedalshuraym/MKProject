@@ -54,4 +54,5 @@ $.ajax({
   }
 });
 
+       document.getElementById('btn1').disabled = false;
 }
