@@ -1,4 +1,5 @@
-function getForcasting(){
+function getForcasting(
+document.getElementById('button').disabled = true;
 document.getElementById("day").innerHTML =	"";
 var element = document.getElementById("cities");
 var city = element.options[element.selectedIndex].value;
