@@ -44,7 +44,7 @@ $.ajax({
   },
   method: 'GET',
   success: function(data){
-   // console.log(data.forecasts);
+    console.log(data.forecasts);
 	
 	 for ($i = 0; $i < data.forecasts.length; $i++) {
 	
